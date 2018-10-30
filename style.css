@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {box-sizing:border-box;}
+
+p,h1,h2,h3,a {
+  margin:0px;
+  padding:0px;
+  border:0px;
+}
+
+html {
+  background-image: url("https://image.ibb.co/b9C9Yw/black_lozenge.png");
+}
+
+h1 {
+  color: #f2f2f2;
+  font-size: 8.5vh;
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 0.3vh solid #262626;
+  padding-bottom: 2vh;
+  margin-bottom: 2vh;
+}
+
+a {
+  color: #b3b3b3;
+  font-size: 4vh;
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #f2f2f2;
+}
+
+a:active {
+  color: #b3b3b3;
+}
+
+p {
+  color: #f2f2f2;
+  font-family:"Open Sans",sans-serif;
+  font-style:normal;
+  font-weight:500;
+  text-decoration:none;
+}
+
+h2 {
+  color: #f2f2f2;
+  font-family:"Open Sans",sans-serif;
+  font-style:normal;
+  font-weight:500;
+  text-decoration:none;
+}
+
+h3 {
+  color: #f2f2f2;
+  font-family:"Raleway",sans-serif;
+  font-style:normal;
+  font-weight:500;
+  text-decoration:none;
+  font-size: 2.5vh;
+  float:right;
+  margin-right:.5vw;
+}
+
+table {
+  width:100%;
+  max-width:100%
+}
+td {
+  font-size: 2.5vh;
+  vertical-align: top;
+  text-align:center;
+  width:90%;
+}
+
+td a {
+  font-family:"Open Sans",sans-serif;
+  font-size: 3.5vh;
+}
+
+td a:visited {
+  color: #f2f2f2;
+}
+
+th {
+  color: #f2f2f2;
+  font-size: 4.5vh;
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding:5vw;
+
+}
+
+.Usage,.PriceRange {
+  padding-left:2vw;
+}
+
+#title1{
+  margin-top:4vh;
+  width:45vw;
+}
+
+.bodytext p {
+  font-size: 2.5vh;
+  padding:2vh;
+}
+
+#top {
+  height:40px;
+  width:auto;
+  border-bottom:.3vh solid #262626;
+}
+
+#bottom {
+  height:3vh;
+  position:relative;
+  z-index:2;
+}
+
+.dropdown {
+  float:right;
+  position:relative;
+  display:inline-block;
+}
+
+.dropcontent{
+  margin-top:20px;
+  display:none;
+  position:absolute;
+  right:0;
+  z-index:1;
+}
+
+.dropcontent a {
+  float:right;
+  font-size:3.5vh;
+  background-color:rgba(0,0,0,0.4);
+  border-radius: 2vh;
+  display:block;
+  padding:1.5vh 1.5vh;
+  white-space: nowrap;
+  margin-bottom:.5vh;
+}
+
+.show {display:block;}
+.dropbutton {
+  background-image:url("https://image.ibb.co/cXg41R/menu_button.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-color: transparent;
+  height:18px;
+  width:40px;
+  margin-top:1vh;
+  border:none;
+  cursor:pointer;
+}
+.dropbutton:hover{
+  background-image:url("https://image.ibb.co/h8sxo6/menu_button.png");
+  border:none;
+}
+.dropbutton:active{
+  background-image:url("https://image.ibb.co/cXg41R/menu_button.png");
+  border:none;
+}
+.dropbutton:focus {
+  outline:0;
+}
+
+#saximage {
+  position:relative;
+  height: 84vh;
+  margin-left: 45vw;
+  margin-top:3vh;
+}
+
+#brand {
+  position:relative;
+  float:left;
+  text-align: center;
+  height:8vh;
+  width:30vw;
+  top:35vh;
+  left:10vw;
+}
+
+.slides-wrapper{
+  width:100%;
+  height:90%;
+  overflow:hidden;
+  position:absolute;
+  margin:auto;
+  right:2px;
+}
+
+.slides {
+  display:none;
+}
+
+.previous, .next {
+  cursor:pointer;
+  position:absolute;
+  z-index:1;
+  top:50%;
+  width:auto;
+  padding:16px;
+  color:#f2f2f2;
+  font-weight:bold;
+  font-size:18px;
+  transition:0.6s ease;
+  border-radius: 0 10px 10px 0
+}
+
+.next {
+  right:0;
+  border-radius: 10px 0 0 10px;
+}
+
+.previous:hover, .next:hover {
+  background-color:rgba(0,0,0,0.4)
+}
+
+.text {
+  color: #f2f2f2;
+  font-size:3vh;
+  position:absolute;
+  width:30%;
+  padding: 2vh;
+  background-color: rgba(0,0,0,0.6);
+  border-radius:5vh;
+  left:10vw;
+  top:40vh;
+}
+
+.text a {
+  margin-top:1vh;
+  font-size: 5vh;
+}
+
+.dot {
+  position:relative;
+  z-index:1;
+  cursor:pointer;
+  height: 15px;
+  width:15px;
+  margin: 0 2px;
+  margin-top:80vh;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .5s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(255,255,255,0.6);
+}
+
+#dots {
+  z-index:2;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href='style.css' rel='stylesheet' type='text/css'/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+  <title>About</title>
+</head>
+
+<body>
+  <div id="top">
+    <div class="dropdown">
+      <button onclick="drop()" class="dropbutton"></button>
+      <div id="myDropdown" class="dropcontent">
+        <a href="lab1.html">Home</a>
+        <a href="#">About</a>
+        <a href="Learn.html">Learn</a>
+        <a href="#">Resources</a>
+      </div>
+    </div>
+  </div>
+  <div class="slides-wrapper">
+    <div class="slides fade">
+      <img src="https://i.imgur.com/ydCUKDJ.jpg" alt="pic1" style="width:100%"/>
+      <div class="text">
+        <p>The saxophone was created by Belgian instrument maker Adolphe Sax in 1840.
+          Although they are made mostly from brass, they are considered woodwinds as they use a single-reed mouthpiece. </p>
+      </div>
+    </div>
+
+    <div class="slides fade">
+      <img src="https://i.imgur.com/FQVjBRO.jpg" alt="pic2" style="width:100%"/>
+      <div class="text">
+        <p>Although there are many different types of saxophones, the most commonly played are the soprano, alto,
+          tenor, and baritone. Most players begin learning with the alto saxophone, depicted here.</p>
+      </div>
+    </div>
+
+    <div class="slides fade">
+      <img src="https://i.imgur.com/G6pMB2l.jpg" alt="pic3" style="width:100%"/>
+      <div class="text">
+        <p>Saxophones are used in a variety of music, from classical to jazz to songs on the radio today.
+        This is because they have a unique sound, but can also imitate other instruments. </p>
+      </div>
+    </div>
+
+    <div class="slides fade">
+      <img src="https://i.imgur.com/6hVCinR.jpg" alt="pic4" style="width:100%"/>
+      <div class="text">
+        <p>Although learning saxophone can be a long process, it's never to late to get started!
+          Begin your journey here today:</p>
+        <a href="Learn.html">Learn</a>
+      </div>
+    </div>
+    <a class="next" onclick="addSlides(1)">&#10095;</a>
+    <a class="previous" onclick="addSlides(-1)">&#10094;</a>
+  </div>
+
+
+  <br/>
+
+  <div id="dots" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <div id="bottom">
+    <h3>Created by Charlie Ye</h3>
+  </div>
+  <script type="text/javascript" src="labjs.js"></script>
+</body>
+</html>
